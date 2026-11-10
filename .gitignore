@@ -1,0 +1,10 @@
+# Compiled output
+out/
+*.class
+sources.txt
+
+# Real configuration: holds the database and mail passwords
+config/app.properties
+
+# Downloaded dependencies
+lib/*.jar
