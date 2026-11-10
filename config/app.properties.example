@@ -1,0 +1,40 @@
+# =====================================================================
+# DEIHS LIBRARY SYSTEM - CONFIGURATION
+#
+# Copy this file to  config/app.properties  and fill in your own values.
+# That copy is ignored by git, so your real password never gets committed.
+# =====================================================================
+
+# ---------------------------------------------------------------------
+# MySQL
+# The user and password must match what you set in sql/schema.sql.
+# ---------------------------------------------------------------------
+db.url=jdbc:mysql://localhost:3306/deihs_library?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+db.user=deihs_app
+db.password=change-this-password
+
+# ---------------------------------------------------------------------
+# Email
+#
+# mail.enabled=false  ->  no mail is sent; the six digit code is printed
+#                         to the console instead. Use this while you are
+#                         still building, or if you have no SMTP account.
+# mail.enabled=true   ->  codes are really emailed using the settings below.
+#
+# Gmail:    host smtp.gmail.com   port 465
+#           Turn on 2-Step Verification, then create an App Password at
+#           https://myaccount.google.com/apppasswords and paste the
+#           16 character value below. Your normal Gmail password will NOT work.
+#
+# Outlook:  host smtp-mail.outlook.com   port 587
+# Yahoo:    host smtp.mail.yahoo.com     port 465
+#
+# Port 465 connects with SSL straight away; any other port (587) starts in
+# the clear and upgrades with STARTTLS. Both are handled automatically.
+# ---------------------------------------------------------------------
+mail.enabled=false
+mail.host=smtp.gmail.com
+mail.port=465
+mail.username=your.address@gmail.com
+mail.password=your-16-char-app-password
+mail.from.name=DEIHS Library
